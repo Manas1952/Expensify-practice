@@ -13,19 +13,20 @@ module.exports = {
       rules: [
         {
           test: /\.js$/,
-          use:{
-            loader: 'babel-loader',
-            options:{
-              presets:[
-                ['@babel/preset-env',
-                {
-                  'useBuiltIns':'usage',
-                  'corejs':3
-                }],
-                '@babel/preset-react'
-              ]
-            }
-          },
+          loader:'babel-loader',
+          // use:{
+          //   loader: 'babel-loader',
+          //   options:{
+          //     presets:[
+          //       ['@babel/preset-env',
+          //       {
+          //         'useBuiltIns':'usage',
+          //         'corejs':3
+          //       }],
+          //       '@babel/preset-react'
+          //     ]
+          //   }
+          // },
           exclude: /node_modules/
         },
         {
