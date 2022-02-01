@@ -1,5 +1,8 @@
 // import 'react-dates/initialize'
 import React from 'react'
+// import 'react-dates/lib/css/_datepicker.css'
+// import 'react-dates/lib/theme/DefaultTheme';
+// import 'react-dates/initialize'
 import { DateRangePicker } from 'react-dates'
 import { connect } from 'react-redux'
 import { setStartDate, setEndDate, setTextFilter, sortByAmount, sortByDate } from '../actions/filters'

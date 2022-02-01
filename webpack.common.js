@@ -1,10 +1,8 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-module.exports = () => {
+module.exports = {
   // const CSSExtract = new ExtractTextPlugin('styles.css')
-  return {
-    mode: 'development',
     entry: './src/app.js',
     output: {
       path: path.join(__dirname, 'public', 'dist'),
@@ -27,7 +25,6 @@ module.exports = () => {
     plugins: [
       new MiniCssExtractPlugin()
     ],
-    devtool: 'inline-cheap-module-source-map',
     devServer: {
       static: {
         directory: path.join(__dirname, 'public'),
@@ -35,5 +32,4 @@ module.exports = () => {
       },
       historyApiFallback: true
     }
-  }
 }

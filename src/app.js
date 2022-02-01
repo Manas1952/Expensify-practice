@@ -11,7 +11,7 @@ import 'react-dates/initialize'
 import 'normalize.css/normalize.css'
 import './styles/styles.scss'
 import 'react-dates/lib/css/_datepicker.css'
-import 'react-dates/lib/theme/DefaultTheme';
+// import 'react-dates/lib/theme/DefaultTheme';
 
 const store = configureStore()
 const expense1 = store.dispatch(addExpense({ id:uuid(), description: 'Rent', amount: 225, createdAt: moment(), note: 'note' }))
