@@ -1,0 +1,16 @@
+import React from 'react'
+import ExpenseListFilters from './ExpenseListFilters'
+import ExpensesList from './ExpensesList'
+import ExpensesSummary from './ExpensesSummary'
+import Header from './Header'
+
+const ExpenseDashBoardPage = () => (
+  <div>
+    <Header />
+    <ExpensesSummary />
+    <ExpenseListFilters />
+    <ExpensesList />
+  </div>
+)
+
+export default ExpenseDashBoardPage

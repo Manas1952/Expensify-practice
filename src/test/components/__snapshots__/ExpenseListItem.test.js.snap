@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseListItem 1`] = `
+<div>
+  <NavLink
+    key="1"
+    to="/edit/1"
+  >
+    Testing_1
+     
+    $1.23
+     
+    January 1st, 1970
+     
+     
+  </NavLink>
+</div>
+`;
