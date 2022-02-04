@@ -8,7 +8,7 @@
     "build:prod": "webpack --config webpack.prod.js",
     "dev-server": "webpack-dev-server --config webpack.dev.js",
     "start": "node server/server.js",
-    "test": "jest --config=jest.config.json",
+    "test": "jest --config=jest.config.json --detectOpenHandles",
     "heroku-postbuild": "npm run build:prod"
   },
   "author": "Manas Purohit",
@@ -20,8 +20,10 @@
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "dotenv": "^16.0.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "express": "^4.17.2",
+    "firebase": "^9.6.5",
     "history": "^4.7.2",
     "mini-css-extract-plugin": "^2.5.3",
     "moment": "^2.29.1",
@@ -34,6 +36,7 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.3.0",
     "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
     "sass-loader": "^12.4.0",
     "uuid": "^8.3.2",
     "webpack": "^5.67.0",
@@ -43,6 +46,7 @@
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "jest": "^27.4.7",
+    "redux-mock-store": "^1.5.4",
     "webpack-dev-server": "^4.7.3",
     "webpack-merge": "^5.8.0"
   }

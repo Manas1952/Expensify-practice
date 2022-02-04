@@ -16,7 +16,7 @@ export default [
     createdAt: moment(0).subtract(4, 'days').valueOf()
   },
   {
-    id: '1',
+    id: '3',
     description: 'Testing_3',
     note: '',
     amount: 3456,

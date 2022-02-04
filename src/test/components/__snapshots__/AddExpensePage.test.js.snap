@@ -2,7 +2,6 @@
 
 exports[`should render AddExpensePage 1`] = `
 <div>
-  <Header />
   <ExpenseForm
     onSubmit={[Function]}
   />
