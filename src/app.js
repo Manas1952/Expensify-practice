@@ -14,13 +14,8 @@ import './styles/styles.scss'
 import { firebase } from './firebase/firebase'
 import { login, logout, startLogin, startLogout } from './actions/auth'
 import LoadingPage from './components/LoadingPage'
-// import { database, ref, set } from './firebase/firebase'
-// import 'react-dates/lib/theme/DefaultTheme';
 
 const store = configureStore()
-// const expense1 = store.dispatch(addExpense({ id:uuid(), description: 'Rent', amount: 225, createdAt: moment(), note: 'note' }))
-// const expense2 = store.dispatch(addExpense({ id: uuid(), description: 'Bill', amount: 100, createdAt: moment() }))
-// console.log(moment("2016-10-11").valueOf())
 
 const jsx = (
   <Provider store={store} >
@@ -49,6 +44,6 @@ firebase.auth().onAuthStateChanged((user) => {
   else {
     store.dispatch(logout())
     renderApp()
-    // history.push('/')
+    history.push('/')
   }
 })
