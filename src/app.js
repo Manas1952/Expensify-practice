@@ -1,7 +1,6 @@
 import moment from 'moment'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { v4 as uuid } from 'uuid'
 import { Provider } from 'react-redux'
 import 'react-dates/initialize'
 import 'normalize.css/normalize.css'
